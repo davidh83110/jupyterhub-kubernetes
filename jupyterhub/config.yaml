@@ -1,0 +1,11 @@
+proxy:
+  secretToken: "c1d6213a6c5deccc800beda4c8241dc943c746102554a440bc6bb4043b3bee38"
+auth:
+  type: github
+  github:
+    clientId: "f68be4cdb45856ca1de2"
+    clientSecret: "bbbe8f29de2959b4d61adcdec90f4fa40108a280"
+    callbackUrl: "https://homework.davidh83110.com/hub/oauth_callback"
+  admin:
+    users:
+      - davidh83110

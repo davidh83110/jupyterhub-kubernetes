@@ -1,0 +1,6 @@
+FROM jupyterhub/k8s-singleuser-sample:0.7.0
+
+RUN npm i -g ijavascript
+
+
+CMD ["sh", "-c", "/opt/conda/lib/node_modules/ijavascript/bin/ijavascript.js & jupyterhub-singleuser"]

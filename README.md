@@ -1,8 +1,13 @@
 # jupyterhub-kubernetes
 Helm install jupyterhub and deploy mysql manually
+`homepage` [https://homework.davidh83110.com](https://homework.davidh83110.com)
+
+
 
 ### Auth
 OAuth with Github.
+
+
 
 ### Helm (install jupyterhub)
 
@@ -21,6 +26,8 @@ helm upgrade  --values config.yaml david-jhub .
 helm delete david-jhub
 ```
 
+
+
 ### javascript support
 
 jupyterhub-singleuser use image below
@@ -28,10 +35,12 @@ jupyterhub-singleuser use image below
 davidh83110/jupyter-k8s-singleuser-javascript:0.7.0
 ```
 
-build
+`build`
 ```
 docker build -t singleuser . -f Dockerfile_singleuser
 ```
+
+
 
 ### MySQL
 
@@ -41,9 +50,11 @@ cd mysql && kubectl apply -f mysql-deployment.yaml && \
     kubectl apply -f mysql-pv.yaml
 ```
 
+
+
 ### U.S. Congress Member to MySQL
 
-us_congress.members (PK=ID, auto increment)
+`us_congress.members` (PK=ID, auto increment)
 Get member json list from US github repo [LINK](https://theunitedstates.io/congress-legislators/legislators-current.json)
 
 `python3 and pymysql`
@@ -53,6 +64,7 @@ python3 congress_cralwer.py
 
 `columns`
 ||ID(PK)  ||Name ||party ||state ||office address ||office phone ||start date ||end date ||
+
 
 
 ### Terraform with EKS

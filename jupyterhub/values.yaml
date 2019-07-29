@@ -201,7 +201,6 @@ singleuser:
   extraResource:
     limits: {}
     guarantees: {}
-  # cmd: /opt/conda/lib/node_modules/ijavascript/bin/ijavascript.js & /opt/conda/bin/jupyterhub-singleuser
   defaultUrl:
 
 

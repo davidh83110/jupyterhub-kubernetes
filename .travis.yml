@@ -26,6 +26,7 @@ script:
   - docker build -t davidh83110/jupyter-k8s-singleuser-javascript jupyterhub/ -f jupyterhub/Dockerfile_singleuser
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWD"
   - docker push davidh83110/jupyter-k8s-singleuser-javascript:latest
-  - helm init --service-account tiller --wait || travis_terminate 1;
-  - helm upgrade --values jupyterhub/config.yaml david-jhub jupyterhub || travis_terminate 1;
-  - kubectl apply -f mysql/mysql-deployment.yaml || travis_terminate 1;
+  - helm init --service-account tiller --wait
+  - helm upgrade --values jupyterhub/config.yaml david-jhub jupyterhub 
+  - kubectl apply -f mysql/mysql-deployment.yaml
+  - echo 'deployed'

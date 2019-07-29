@@ -1,6 +1,9 @@
 # jupyterhub-kubernetes
 Helm install jupyterhub and deploy mysql manually.
 
+[![Build Status](https://travis-ci.org/davidh83110/jupyterhub-kubernetes.svg?branch=master)](https://travis-ci.org/davidh83110/jupyterhub-kubernetes)
+
+
 `homepage` [https://homework.davidh83110.com](https://homework.davidh83110.com)
 
 <br />

@@ -28,7 +28,15 @@ class Mysql():
         elif 'insert' in sql_string or 'INSERT' in sql_string:
             cursor.execute(sql_string, data)
             self.connection.commit()
-            
+
+        elif 'update' in sql_string or 'UPDATE' in sql_string:
+            cursor.execute(sql_string, data)
+            self.connection.commit()
+
+        elif 'delete' in sql_string or 'DELETE' in sql_string:
+            cursor.execute(sql_string)
+            self.connection.commit()
+
         else:
             return 'Query Method not Allowed'
         
